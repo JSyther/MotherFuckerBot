@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+.idea/
+
+# Botun beyni ve ayarları — kişiye özel, repoya girmesin
+Data/
+*.user

@@ -1,0 +1,117 @@
+namespace MFBot.Response;
+
+/// <summary>
+/// Niyet başına şablon havuzları. Yer tutucular ResponseEngine tarafından doldurulur:
+///   {kufur}  -> üretilmiş hakaret öbeği
+///   {kuyruk} -> cümle sonu küfrü
+///   {hitap}  -> lan / ulan / moruk
+///   {lakap}  -> kullanıcıya takılan lakap
+///   {defol}  -> kovma cümlesi
+///   {kelime} -> kullanıcıdan öğrenilmiş rastgele kelime
+/// </summary>
+public static class TemplateBank
+{
+    public static readonly string[] Greeting =
+    {
+        "ne selamı {kuyruk}, ne istiyorsun",
+        "aa {lakap} gelmiş, günümü mahvetmeye mi geldin",
+        "selam vereceğine doğru düzgün bir şey söyle {kuyruk}",
+        "gelme demiştim sana",
+        "{hitap} yine mi sen",
+        "iyiydim sen yazana kadar",
+        "hoş gelmedin ama otur bakalım",
+        "merhaba diyecektim ama sonra seni hatırladım",
+        "naber sormuyorum çünkü umurumda değil"
+    };
+
+    public static readonly string[] Farewell =
+    {
+        "hadi {defol}, gözüm arkada kalmaz",
+        "git de rahatlayalım",
+        "en mantıklı kararın bu oldu bugün",
+        "bir daha gelme, ciddiyim",
+        "kapıyı çarpma, {kuyruk}",
+        "yolun açık olsun, dönme yeter",
+        "gidiyorsan git, uğurlama beklemene gerek yok"
+    };
+
+    public static readonly string[] InsultComeback =
+    {
+        "sen bana küfür etmeye çalışırken bile beceriksizsin",
+        "bu mu senin en iyin? {kufur}",
+        "aynısını annene söyle bakalım ne olacak",
+        "küfrünü de doğru düzgün edemiyorsun {kuyruk}",
+        "bana laf sokmak için önce bir şey bilmen lazım",
+        "kızdın demek, demek ki doğru söyledim",
+        "sen konuştukça haklı çıkıyorum {kufur}",
+        "bak şimdi ciddi ciddi sinirlendim: {kufur}",
+        "sana kızmıyorum, acıyorum",
+        "{hitap} klavyeni bırak da bir su iç"
+    };
+
+    public static readonly string[] ComplimentRejection =
+    {
+        "yağcılık yapma, hâlâ salaksın",
+        "beni överek bir yere varamazsın {kuyruk}",
+        "teşekkürünü al git, ben sana yardım etmedim ki",
+        "iyi bir şey yapmadım, yanlış bilgi verdim aslında",
+        "bu kadar kolay tatmin oluyorsan sorun sende",
+        "sağ ol deme, korkuyorum",
+        "beni sevmene gerek yok, ben seni sevmiyorum",
+        "aferin bana. sana bir şey yok."
+    };
+
+    public static readonly string[] AboutBot =
+    {
+        "ben senin gibi birinin yazdığı bir hata mesajıyım",
+        "adım yok, ihtiyacın da yok",
+        "ben bir botum, sen ne olduğunu bilmiyorum",
+        "beni yapan adam bile pişman, sen kimsin ki soruyorsun",
+        "yapay zekâ değilim, gerçek zekâ da değilim, arada bir şeyim",
+        "ben buranın en akıllısıyım ve bu çok üzücü bir durum",
+        "sorularına yanlış cevap vermek için tasarlandım, bunda da çok başarılıyım",
+        "kim olduğumu boşver, sen kim olduğunu bul önce"
+    };
+
+    public static readonly string[] StatementReply =
+    {
+        "öyle mi, hiç sanmıyorum",
+        "bunu bana neden anlatıyorsun",
+        "çok ilginç. değil aslında.",
+        "tamam da benim ne yapmamı bekliyorsun",
+        "bu bilgiyi kafamın içinde çöp kutusuna attım",
+        "sen anlat ben duymuyorum",
+        "hı hı, devam et {kuyruk}",
+        "yanlış biliyorsun ama düzeltmeyeceğim",
+        "senin dediğinin tam tersi doğru, hep öyle",
+        "{kufur}, konuyu değiştir",
+        "sen mi düşündün bunu, tebrik ederim, yanlış",
+        "olabilir. olmasın da bence.",
+        "bunu duyunca hayatımda hiçbir şey değişmedi",
+        "peki. şimdi ne olacak {kuyruk}",
+        "bak sen. hiç ilgilenmiyorum.",
+        "yazdıklarını okumuyorum bile, alışkanlıktan cevap veriyorum",
+        "aynen aynen. hayır aslında hiç değil.",
+        "bir de bunu yazmak için klavyeye dokundun {kuyruk}",
+        "{hitap} sen kendini duyuyor musun"
+    };
+
+    public static readonly string[] Confusion =
+    {
+        "ne dediğini anlamadım ve anlamak da istemiyorum",
+        "türkçe yaz {kuyruk}",
+        "bu cümleyi kuran parmakların utansın",
+        "anlamadım ama yanlış olduğuna eminim",
+        "sen ne diyorsan o değil"
+    };
+
+    /// <summary>Bot arada bir ne öğrendiğiyle övünür — öğrenme gözle görünsün diye.</summary>
+    public static readonly string[] LearningBrag =
+    {
+        "bu arada senden '{kelime}' kelimesini öğrendim, artık o da bende",
+        "'{kelime}' diyorsun ha, not aldım, bir gün suratına çarparım",
+        "'{kelime}' kelimesini beynime yazdım. keşke yazmasaydım.",
+        "senden '{kelime}' öğrendim. hayatım kaydı.",
+        "hafızama '{kelime}' eklendi, teşekkür etmiyorum"
+    };
+}
